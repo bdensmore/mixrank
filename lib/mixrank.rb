@@ -1,7 +1,7 @@
 module Mixrank
 
 	include HTTParty
-	MIXRANK_URL = "http://api.mixrank.com/v1/json/"
+	MIXRANK_URL = "http://api.mixrank.com/v2/json/"
 
 	def self.connect(api_key)
 		self.base_uri "#{MIXRANK_URL}/#{api_key}"
@@ -16,3 +16,5 @@ require 'mixrank/echo'
 require 'mixrank/publisher'
 require 'mixrank/advertiser'
 require 'mixrank/keyword'
+require 'mixrank/displayad'
+require 'mixrank/textad'
